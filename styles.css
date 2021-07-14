@@ -1,0 +1,116 @@
+html {
+    background-image: url(background.jpg);
+}
+
+#submit {
+    background-image: url(search.png);
+    background-color: transparent;
+    background-size: 23px;
+    height: 28px;  
+    width:30px;
+
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+#form {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-wrapper {
+    color:white;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    border:1px solid rgb(213, 221, 213);
+    
+}
+
+#temp {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#weather {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#wind {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+#cloud {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+#temp, #weather, #time, #wind, #cloud {
+    color:white;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    border:1px solid rgb(194, 211, 194);
+}
+
+#wind, #cloud {
+    text-align: right;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid rgb(196, 185, 185);
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.text-wraper {
+    z-index: 700;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .main-title {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+
+#cityname {
+    padding: 20px;
+    text-align: center;
+}
+
+.data {
+    font-size: 17px;
+    font-weight: 700;
+}
